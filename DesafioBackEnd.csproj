@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- necessário para utilizar o AutoMapper -->
+    <PackageReference Include="AutoMapper" Version="10.0.0"/>
+    <!-- Necessária para utilização do sql server -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4"/>
+    <!-- Necessária para gerar token jwt -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4"/>
+    <!-- Necessário para o swagger -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.3"/>
+    <!-- Necessário para utilização dos comandos do migrations -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4"/>
+  </ItemGroup>
+</Project>
+<!-- Todos projetos foram adicionados no visual code utilizando as teclas crlt +shift+P depois indo até add nuget packager -->
